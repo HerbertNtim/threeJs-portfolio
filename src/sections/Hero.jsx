@@ -6,6 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import CanvasLoader from "../components/CanvasLoader";
 import { calculateSizes } from "../constant";
 import Target from "../components/Target";
+import ReactLogo from "./ReactLogo";
 
 const Hero = () => {
   // Use media queries to determine screen size
@@ -38,6 +39,7 @@ const Hero = () => {
           
             <group>
               <Target position={sizes.targetPosition} />
+              <ReactLogo position={sizes.reactLogoPosition} />
             </group>
 
             <ambientLight intensity={1} />
