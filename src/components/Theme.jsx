@@ -1,26 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const Theme = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    // Check if dark mode is already enabled in localStorage or by system preference
-    const savedTheme = localStorage.theme;
-    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const shouldEnableDark = savedTheme === 'dark' || (!savedTheme && prefersDarkMode);
-
-    setIsDarkMode(shouldEnableDark);
-    if (shouldEnableDark) {
-      document.documentElement.classList.add('dark');
-    }
-  }, []);
+  const initialTheme = document.documentElement.classList.contains('dark');
+  const [isDarkMode, setIsDarkMode] = useState(initialTheme);
 
   const toggleDarkMode = () => {
-    const htmlElement = document.documentElement;
     const newMode = !isDarkMode;
     setIsDarkMode(newMode);
-    htmlElement.classList.toggle('dark', newMode);
-    localStorage.theme = newMode ? 'dark' : 'light';
+    document.documentElement.classList.toggle('dark', newMode);
+    localStorage.setItem('theme', newMode ? 'dark' : 'light');
   };
 
   return (
