@@ -7,6 +7,8 @@ import CanvasLoader from "../components/CanvasLoader";
 import { calculateSizes } from "../constant";
 import Target from "../components/Target";
 import ReactLogo from "./ReactLogo";
+import Cube from "./Cube";
+import Rings from "./Rings";
 
 const Hero = () => {
   // Use media queries to determine screen size
@@ -40,6 +42,8 @@ const Hero = () => {
             <group>
               <Target position={sizes.targetPosition} />
               <ReactLogo position={sizes.reactLogoPosition} />
+              <Cube position={sizes.cubePosition} />
+              <Rings position={sizes.ringPosition} />
             </group>
 
             <ambientLight intensity={1} />
