@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import { useMediaQuery } from "react-responsive";
 import CanvasLoader from "../components/CanvasLoader";
 import { calculateSizes } from "../constant";
+import Target from "../components/Target";
 
 const Hero = () => {
   // Use media queries to determine screen size
@@ -33,7 +34,12 @@ const Hero = () => {
               scale={sizes.deskScale}
               position={sizes.deskPosition}
               rotation={[0.1, -Math.PI, 0]}
-            />
+            />    
+          
+            <group>
+              <Target position={sizes.targetPosition} />
+            </group>
+
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
