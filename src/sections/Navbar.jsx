@@ -3,7 +3,7 @@ import { navLinks } from "../constant";
 import Theme from "../components/Theme";
 
 const NavItems = () => (
-  <div className="flex justify-center items-center gap-4">
+  <div className="flex justify-center items-center gap-4 ">
     <ul className="nav-ul">
       {navLinks.map((item) => (
         <li key={item.id} className="nav-li">
@@ -23,12 +23,12 @@ const Navbar = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 dark:bg-black/90">
+    <header className="fixed top-0 left-0 right-0 z-50 shadow-lg dark:bg-black/90">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <a
             href="/"
-            className="text-neutral-400 font-bold text-2xl hover:text-white transition-colors"
+            className="text-white-500 dark:text-neutral-400 font-bold text-2xl hover:text-white transition-colors"
           >
             Herbert
           </a>
@@ -42,7 +42,7 @@ const Navbar = () => {
               <img
                 src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
                 alt="toggle"
-                className="w-8 h-8"
+                className="w-10 h-10 bg-black-100 dark:bg-transparent p-2 rounded-full"
               />
             </button>
             <Theme />
@@ -55,12 +55,11 @@ const Navbar = () => {
       </div>
 
       <div className={`nav-sidebar ${isOpen ? "max-h-screen" : "max-h-0"}`}>
-        <nav className="p-5">
+        <nav className="p-5 bg-white/45 dark:bg-black-400">
           <NavItems onClick={closeMenu} />
         </nav>
       </div>
     </header>
   );
 };
-
 export default Navbar;
