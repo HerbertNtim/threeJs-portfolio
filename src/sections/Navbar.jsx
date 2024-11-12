@@ -3,15 +3,17 @@ import { navLinks } from "../constant";
 import Theme from "../components/Theme";
 
 const NavItems = () => (
-  <ul className="nav-ul">
-    {navLinks.map((item) => (
-      <li key={item.id} className="nav-li">
-        <a href={item.href} className="nav-li_a">
-          {item.name}
-        </a>
-      </li>
-    ))}
-  </ul>
+  <div className="flex justify-center items-center gap-4">
+    <ul className="nav-ul">
+      {navLinks.map((item) => (
+        <li key={item.id} className="nav-li">
+          <a href={item.href} className="nav-li_a">
+            {item.name}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
 );
 
 const Navbar = () => {
@@ -31,23 +33,23 @@ const Navbar = () => {
             Herbert
           </a>
 
-          <button
-            onClick={toggleMenu}
-            className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex"
-            aria-label="Toggle menu"
-          >
-            <img
-              src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
-              alt="toggle"
-              className="w-8 h-8"
-            />
-          </button>
-
-          
+          <div className="flex items-center gap-4">
+            <button
+              onClick={toggleMenu}
+              className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex"
+              aria-label="Toggle menu"
+            >
+              <img
+                src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
+                alt="toggle"
+                className="w-8 h-8"
+              />
+            </button>
+            <Theme />
+          </div>
 
           <nav className="sm:flex hidden">
             <NavItems />
-              <Theme />
           </nav>
         </div>
       </div>
