@@ -55,7 +55,7 @@ const Navbar = () => {
       </div>
 
       <div className={`nav-sidebar ${isOpen ? "max-h-screen" : "max-h-0"}`}>
-        <nav className="p-5 bg-white/45 dark:bg-black-400">
+        <nav className="p-5 bg-white/45 dark:bg-black-200">
           <NavItems onClick={closeMenu} />
         </nav>
       </div>
