@@ -9,6 +9,10 @@
 }
 
 body {
+   background: white-800;
+   font-family: 'General Sans', sans-serif;
+}
+.dark body {
   background: #010103;
   font-family: 'General Sans', sans-serif;
 }
@@ -27,11 +31,11 @@ body {
   }
 
   .nav-li {
-    @apply text-neutral-400 hover:text-white font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
+    @apply text-black dark:text-neutral-400 hover:text-white font-generalsans max-sm:dark:hover:bg-black-500 max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
   }
 
   .nav-li_a {
-    @apply text-lg md:text-base hover:text-white transition-colors;
+    @apply text-xl md:text-2xl hover:text-white transition-colors;
   }
 
   .nav-sidebar {

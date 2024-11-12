@@ -1,8 +1,10 @@
-import React from 'react'
+import Navbar from "./sections/Navbar"
 
 const App = () => {
   return (
-    <div className='text-5xl text-white'>App</div>
+    <main className='text-5xl text-white'>
+      <Navbar />
+    </main>
   )
 }
 
