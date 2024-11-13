@@ -30,7 +30,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I&apos;m Herbert Ntim</p>
               <p className="grid-subtext">
-              With 2 years of experience, I have built a strong foundation in software development through academic projects and internships. I am eager to apply my skills and continue growing in both independent and collaborative roles.
+                With a degree in Computer Engineering (KNUST) and 2 years of experience, I&apos;ve built a strong foundation in software development through academic projects and internships. I&apos;m eager to apply my skills and keep growing in both independent and collaborative roles.
               </p>
             </div>
           </div>
