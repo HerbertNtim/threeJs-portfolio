@@ -46,6 +46,12 @@ body {
     @apply bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
   }
 
+  .text-gray_gradient-light {
+    @apply bg-gradient-to-r from-[#6E7079] from-60% via-[#8A8D98] via-60% to-[#8A8D98] to-100% bg-clip-text text-transparent;
+
+
+
+  }
   /* button component */
   .btn {
     @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300  transition-all active:scale-95 text-white mx-auto;

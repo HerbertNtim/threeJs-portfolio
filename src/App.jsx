@@ -1,9 +1,11 @@
+import Hero from "./sections/Hero"
 import Navbar from "./sections/Navbar"
 
 const App = () => {
   return (
-    <main className='text-5xl text-white'>
+    <main className='max-w-7xl mx-auto'>
       <Navbar />
+      <Hero />
     </main>
   )
 }
