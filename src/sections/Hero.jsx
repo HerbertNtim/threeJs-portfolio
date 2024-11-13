@@ -9,6 +9,7 @@ import Target from "../components/Target";
 import ReactLogo from "./ReactLogo";
 import Cube from "./Cube";
 import Rings from "./Rings";
+import HeroCamera from "../components/HeroCamera";
 
 const Hero = () => {
   // Use media queries to determine screen size
@@ -33,12 +34,15 @@ const Hero = () => {
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
-            <HackerRoom
-              scale={sizes.deskScale}
-              position={sizes.deskPosition}
-              rotation={[0.1, -Math.PI, 0]}
-            />    
-          
+            
+            <HeroCamera isMobile={isMobile}>
+              <HackerRoom
+                scale={sizes.deskScale}
+                position={sizes.deskPosition}
+                rotation={[0.1, -Math.PI, 0]}
+              />
+            </HeroCamera>
+
             <group>
               <Target position={sizes.targetPosition} />
               <ReactLogo position={sizes.reactLogoPosition} />
