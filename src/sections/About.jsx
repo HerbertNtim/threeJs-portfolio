@@ -90,7 +90,7 @@ const About = () => {
                 I&apos;m based in Kumasi, Ghana and open to remote work
                 worldwide.
               </p>
-              <a href="#projects">
+              <a href="#work">
                 <Button
                   name="View My Projects"
                   isBeam

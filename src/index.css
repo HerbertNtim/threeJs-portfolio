@@ -23,7 +23,7 @@ body {
   }
 
   .head-text {
-    @apply sm:text-4xl text-3xl font-semibold text-gray_gradient;
+    @apply sm:text-4xl text-3xl font-semibold dark:text-gray_gradient;
   }
 
   .nav-ul {
