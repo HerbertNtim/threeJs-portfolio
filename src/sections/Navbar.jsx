@@ -3,7 +3,7 @@ import { navLinks } from "../constant";
 import Theme from "../components/Theme";
 
 const NavItems = () => (
-  <div className="flex justify-center items-center gap-4 ">
+  <div className="flex justify-center items-center gap-4">
     <ul className="nav-ul">
       {navLinks.map((item) => (
         <li key={item.id} className="nav-li">
@@ -23,12 +23,12 @@ const Navbar = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 shadow-lg dark:bg-black/90">
+    <header className="fixed top-0 left-0 right-0 z-50 shadow-lg bg-white/90 dark:bg-black/90">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <a
-            href="/"
-            className="text-white-500 dark:text-neutral-400 font-bold text-2xl hover:text-white transition-colors"
+            href="#home"
+            className="text-white-500 dark:text-neutral-400 font-bold text-2xl dark:hover:text-white transition-colors"
           >
             Herbert
           </a>
