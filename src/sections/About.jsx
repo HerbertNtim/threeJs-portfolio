@@ -30,7 +30,11 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I&apos;m Herbert Ntim</p>
               <p className="grid-subtext">
-                With a degree in Computer Engineering (KNUST) and 2 years of experience, I&apos;ve built a strong foundation in software development through academic projects and internships. I&apos;m eager to apply my skills and keep growing in both independent and collaborative roles.
+                With a degree in Computer Engineering (KNUST) and 2 years of
+                experience, I&apos;ve built a strong foundation in software
+                development through academic projects and internships. I&apos;m
+                eager to apply my skills and keep growing in both independent
+                and collaborative roles.
               </p>
             </div>
           </div>
@@ -47,8 +51,9 @@ const About = () => {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I specialize in a variety of languages, frameworks, Cloud (AWS) and tools
-                that allow me to build robust and scalable applications. I am eager to add new ones.
+                I specialize in a variety of languages, frameworks, Cloud (AWS)
+                and tools that allow me to build robust and scalable
+                applications. I am eager to add new ones.
               </p>
             </div>
           </div>
@@ -85,7 +90,13 @@ const About = () => {
                 I&apos;m based in Kumasi, Ghana and open to remote work
                 worldwide.
               </p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              <a href="#work">
+                <Button
+                  name="View My Projects"
+                  isBeam
+                  containerClass="w-full mt-10"
+                />
+              </a>
             </div>
           </div>
         </div>
