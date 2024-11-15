@@ -2,7 +2,7 @@ import { clientReviews } from "../constant";
 
 const Clients = () => {
   return (
-    <section className="c-space my-20 bg-black-200 pb-10 dark:bg-transparent">
+    <section className="c-space my-20 bg-white-600 dark:bg-black-200 pb-10 p-6 dark:bg-transparent">
       <h3 className="head-text">Reviews</h3>
 
       <div className="client-container">
@@ -20,11 +20,6 @@ const Clients = () => {
                   </div>
                 </div>
 
-                {/* <div className="flex self-end items-center gap-2">
-                  {Array.from({ length: 5 }).map((_, index) => (
-                    <img key={index} src="/assets/star.png" alt="star" className="w-5 h-5" />
-                  ))}
-                </div> */}
                 <a href="" className="dark:text-white-700">
                   LinkedIn
                 </a>
