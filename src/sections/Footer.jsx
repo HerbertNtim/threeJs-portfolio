@@ -8,13 +8,29 @@ const Footer = () => {
       </div>
 
       <div className="flex gap-3">
-        <a href="" className="social-icon">
+        <a
+          href="https://github.com/HerbertNtim"
+          target="_blank"
+          className="social-icon"
+        >
           <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2" />
         </a>
-        <a href="" className="social-icon">
-          <img src="/assets/linkedin.png" alt="linkedIn" className="w-full h-full object-contain" />
+        <a
+          href="www.linkedin.com/in/herbertntim"
+          target="_blank"
+          className="social-icon"
+        >
+          <img
+            src="/assets/linkedin.png"
+            alt="linkedIn"
+            className="w-1/2 h-1/2"
+          />
         </a>
-        <a href="" className="social-icon">
+        <a
+          href="https://wa.me/233559073518"
+          target="_blank"
+          className="social-icon"
+        >
           <img
             src="/assets/whatsapp.svg"
             alt="whatsapp"
