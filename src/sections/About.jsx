@@ -42,19 +42,49 @@ const About = () => {
 
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
+            <h2 className="grid-headtext">Tech Stack</h2>
             <img
               src="assets/grid2.png"
               alt="grid-2"
               className="w-full sm:h-[276px] h-fit object-contain"
             />
 
-            <div>
-              <p className="grid-headtext">Tech Stack</p>
-              <p className="grid-subtext">
-                I specialize in a variety of languages, frameworks, Cloud (AWS)
-                and tools that allow me to build robust and scalable
-                applications. I am eager to add new ones.
-              </p>
+            <div className="flex gap-3 flex-wrap">
+              <img
+                src="/assets/aws.png"
+                alt="aws"
+                className="w-[30px] h-[30px] object-contain"
+              />
+              <img
+                src="/assets/postgresql.png"
+                alt="postgresql"
+                className="w-[30px] h-[30px] object-contain"
+              />
+              <img
+                src="/assets/nodejs.svg"
+                alt="nodejs"
+                className="w-[50px] h-[30px] object-contain"
+              />
+              <img
+                src="/assets/mongodb.svg"
+                alt="mongodb"
+                className="w-[50px] h-[30px] object-contain"
+              />
+              <img
+                src="/assets/docker.png"
+                alt="docker"
+                className="w-[50px] h-[30px] object-contain"
+              />
+              <img
+                src="/assets/git.svg"
+                alt="git"
+                className="w-[50px] h-[30px] object-contain"
+              />
+              <img
+                src="/assets/github.svg"
+                alt="github"
+                className="w-[50px] h-[30px] object-contain"
+              />
             </div>
           </div>
         </div>
