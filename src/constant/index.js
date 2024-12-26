@@ -62,10 +62,10 @@ export const clientReviews = [
 
 export const myProjects = [
   {
-    title: "Podcastr - AI Podcast Platform",
-    desc: "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
+    title: "Eficio - A Project Management System",
+    desc: "Eficio is a web-based project management system that allows you to manage projects, tasks, and milestones. It provides a seamless and efficient workflow for your team.",
     subdesc:
-      "Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.",
+      "Built as a unique web app with Next.js 15, Tailwind CSS, TypeScript, Node.js, Prisma, PostgreSQL and AWS for deployment, Eficio is designed for optimal performance and scalability.",
     href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
     texture: "/textures/project/project1.mp4",
     logo: "/assets/project-logo1.png",
@@ -78,8 +78,8 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
+        name: "Node.js",
+        path: "/assets/nodejs.svg",
       },
       {
         id: 2,
@@ -93,8 +93,18 @@ export const myProjects = [
       },
       {
         id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        name: "Next Js",
+        path: "/assets/next.svg",
+      },
+      {
+        id: 5,
+        name: "AWS",
+        path: "/assets/aws.png",
+      },
+      {
+        id: 6,
+        name: "postgreSQL",
+        path: "/assets/postgresql.png",
       },
     ],
   },
