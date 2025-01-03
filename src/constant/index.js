@@ -66,7 +66,7 @@ export const myProjects = [
     desc: "Eficio is a web-based project management system that allows you to manage projects, tasks, and milestones. It provides a seamless and efficient workflow for your team.",
     subdesc:
       "Built as a unique web app with Next.js 15, Tailwind CSS, TypeScript, Node.js, Prisma, PostgreSQL and AWS for deployment, Eficio is designed for optimal performance and scalability.",
-    href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
+    href: "https://www.youtube.com/watch?v=k0zDHkpDctY",
     texture: "/textures/project/project1.mp4",
     logo: "/assets/project-logo1.png",
     logoStyle: {
