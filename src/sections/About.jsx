@@ -2,10 +2,42 @@ import { useState } from "react";
 import Globe from "react-globe.gl";
 
 import Button from "../components/Button.jsx";
+import TechButton from "../components/TechButton.jsx";
+import { list } from "postcss";
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
+  const techText = [
+    {
+      index: 1,
+      name: "Languages",
+      list: "Language"
+    },
+    {
+      index: 2,
+      name: "Frontend",
+      list: "Frontend"
+    },
+    {
+      index: 3,
+      name: "Backend",
+      list: "Backend"
+    },
+    {
+      index: 4,
+      name: "DevOps",
+      list: "DevOps"
+    },
+  ];
+
+
+  const [activeTech, setActiveTech] = useState(techText[0]);
+
+  const handleTechClick = (tech) => {
+    setActiveTech(tech);
+  };
+  
   const handleCopy = () => {
     navigator.clipboard.writeText("herbertntim2023@gmail.com");
     setHasCopied(true);
@@ -24,7 +56,7 @@ const About = () => {
             <img
               src="assets/grid1.png"
               alt="grid-1"
-              className="w-full sm:h-[276px] h-fit object-contain"
+              className="w-full sm:h-[270px] h-fit object-contain"
             />
 
             <div>
@@ -42,49 +74,23 @@ const About = () => {
 
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <h2 className="grid-headtext">Tech Stack</h2>
-            <img
-              src="assets/grid2.png"
-              alt="grid-2"
-              className="w-full sm:h-[276px] h-fit object-contain"
-            />
+            <div className="mt-2">
+              <h2 className="grid-headtext">Tech Stack</h2>
+              <img
+                src="assets/grid2.png"
+                alt="grid-2"
+                className="w-full sm:h-[276px] h-fit object-contain"
+              />
 
-            <div className="flex gap-3 flex-wrap">
-              <img
-                src="/assets/aws.png"
-                alt="aws"
-                className="w-[30px] h-[30px] object-contain"
-              />
-              <img
-                src="/assets/postgresql.png"
-                alt="postgresql"
-                className="w-[30px] h-[30px] object-contain"
-              />
-              <img
-                src="/assets/nodejs.svg"
-                alt="nodejs"
-                className="w-[50px] h-[30px] object-contain"
-              />
-              <img
-                src="/assets/mongodb.svg"
-                alt="mongodb"
-                className="w-[50px] h-[30px] object-contain"
-              />
-              <img
-                src="/assets/docker.png"
-                alt="docker"
-                className="w-[50px] h-[30px] object-contain"
-              />
-              <img
-                src="/assets/git.svg"
-                alt="git"
-                className="w-[50px] h-[30px] object-contain"
-              />
-              <img
-                src="/assets/github.svg"
-                alt="github"
-                className="w-[50px] h-[30px] object-contain"
-              />
+              <div className="flex gap-3 flex-col">
+                <div className="flex items-center gap-2">
+                  {techText.map((tech) => (
+                    <TechButton key={tech.index} name={tech.name} onClick={() => handleTechClick(tech)}
+                    isActive={activeTech.index === tech.index} isBeam={activeTech.index === tech.index}/>
+                  ))}
+                </div>
+                <div className="text-white m">{activeTech && activeTech.list}</div>
+              </div>
             </div>
           </div>
         </div>

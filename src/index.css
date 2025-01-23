@@ -54,7 +54,11 @@ body {
   }
   /* button component */
   .btn {
-    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300  transition-all active:scale-95 text-white mx-auto;
+    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300 transition-all active:scale-95 text-white mx-auto;
+  }
+
+  .t-btn {
+    @apply flex gap-2 items-center justify-center cursor-pointer p-2 rounded-md bg-black-300 transition-all active:scale-95 text-white text-xs mx-auto;
   }
 
   .btn-ping {
@@ -63,6 +67,10 @@ body {
 
   .btn-ping_dot {
     @apply relative inline-flex rounded-full h-3 w-3 bg-green-500;
+  }
+
+  .t-btn-ping_dot {
+    @apply relative inline-flex rounded-full h-2 w-2 bg-green-500;
   }
 
   /* hero section */
