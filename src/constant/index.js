@@ -21,44 +21,44 @@ export const navLinks = [
   },
 ];
 
-export const clientReviews = [
-  {
-    id: 1,
-    name: "Emily Johnson",
-    position: "Marketing Director at GreenLeaf",
-    img: "assets/review1.png",
-    review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    linkedIn: "https://www.linkedin.com/in/herbertntim/",
-  },
-  {
-    id: 2,
-    name: "Mark Rogers",
-    position: "Founder of TechGear Shop",
-    img: "assets/review2.png",
-    review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
-    linkedIn: "https://www.linkedin.com/in/herbertntim/",
-  },
-  {
-    id: 3,
-    name: "John Dohsas",
-    position: "Project Manager at UrbanTech ",
-    img: "assets/review3.png",
-    review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    linkedIn: "https://www.linkedin.com/in/herbertntim/",
-  },
-  {
-    id: 4,
-    name: "Ether Smith",
-    position: "CEO of BrightStar Enterprises",
-    img: "assets/review4.png",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
-    linkedIn: "https://www.linkedin.com/in/herbertntim/",
-  },
-];
+// export const clientReviews = [
+//   {
+//     id: 1,
+//     name: "Emily Johnson",
+//     position: "Marketing Director at GreenLeaf",
+//     img: "assets/review1.png",
+//     review:
+//       "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+//     linkedIn: "https://www.linkedin.com/in/herbertntim/",
+//   },
+//   {
+//     id: 2,
+//     name: "Mark Rogers",
+//     position: "Founder of TechGear Shop",
+//     img: "assets/review2.png",
+//     review:
+//       "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
+//     linkedIn: "https://www.linkedin.com/in/herbertntim/",
+//   },
+//   {
+//     id: 3,
+//     name: "John Dohsas",
+//     position: "Project Manager at UrbanTech ",
+//     img: "assets/review3.png",
+//     review:
+//       "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+//     linkedIn: "https://www.linkedin.com/in/herbertntim/",
+//   },
+//   {
+//     id: 4,
+//     name: "Ether Smith",
+//     position: "CEO of BrightStar Enterprises",
+//     img: "assets/review4.png",
+//     review:
+//       "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
+//     linkedIn: "https://www.linkedin.com/in/herbertntim/",
+//   },
+// ];
 
 export const myProjects = [
   {
@@ -109,10 +109,10 @@ export const myProjects = [
     ],
   },
   {
-    title: "LiveDoc - Real-Time Google Docs Clone",
-    desc: "LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.",
+    title: "Learnify-LMS - Learning Management System",
+    desc: "The LMS project is an advanced learning management system designed for seamless course delivery and management.",
     subdesc:
-      "With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.",
+      "Built with cutting-edge technologies, it provides a user-friendly interface and supports dynamic course creation, role-based access, and secure payment processing. Deployed on AWS, it ensures scalability, reliability, and exceptional performance for educators and learners alike.",
     href: "https://www.youtube.com/watch?v=y5vE8y_f_OM",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/project-logo2.png",
@@ -142,6 +142,16 @@ export const myProjects = [
         id: 4,
         name: "Framer Motion",
         path: "/assets/framer.png",
+      },
+      {
+        id: 5,
+        name: "Framer Motion",
+        path: "/assets/nodejs.svg",
+      },
+      {
+        id: 6,
+        name: "Framer Motion",
+        path: "/assets/aws.png",
       },
     ],
   },
