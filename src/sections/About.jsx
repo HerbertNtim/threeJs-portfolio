@@ -12,23 +12,28 @@ const About = () => {
     {
       index: 1,
       name: "Languages",
-      list: "Language"
+      list: ["C/C++", "Python", "JavaScript", "TypeScript", "SQL"]
     },
     {
       index: 2,
       name: "Frontend",
-      list: "Frontend"
+      list: ["React", "NextJS", "Redux", "Tailwind CSS", "Shadcn-UI", "Material-UI"]
     },
     {
       index: 3,
       name: "Backend",
-      list: "Backend"
+      list: ["NodeJS", "NestJS", "Express", "Prisma", "GraphQL", "RESTful APIs", "MongoDB", "PostgreSQL"]
     },
     {
       index: 4,
       name: "DevOps",
-      list: "DevOps"
+      list: ["Docker", "AWS", "Github Actions"]
     },
+    {
+      index: 5,
+      name: "Tools",
+      list: ["Git and Github", "Postman", "Vercel", "Render"]
+    }
   ];
 
 
@@ -83,13 +88,17 @@ const About = () => {
               />
 
               <div className="flex gap-3 flex-col">
-                <div className="flex items-center gap-2">
+                <div className="w-full flex items-center gap-2">
                   {techText.map((tech) => (
                     <TechButton key={tech.index} name={tech.name} onClick={() => handleTechClick(tech)}
                     isActive={activeTech.index === tech.index} isBeam={activeTech.index === tech.index}/>
                   ))}
                 </div>
-                <div className="text-white m">{activeTech && activeTech.list}</div>
+                <div className="my-3 flex flex-wrap gap-2 items-center justify-center">
+                  {activeTech.list.map((item, index) => (
+                    <span className="p-2 rounded-md bg-black-500 text-white text-xs" key={index}>{item}</span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
