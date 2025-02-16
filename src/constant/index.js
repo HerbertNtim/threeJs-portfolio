@@ -113,7 +113,7 @@ export const myProjects = [
     desc: "The LMS project is an advanced learning management system designed for seamless course delivery and management.",
     subdesc:
       "Built with cutting-edge technologies, it provides a user-friendly interface and supports dynamic course creation, role-based access, and secure payment processing. Deployed on AWS, it ensures scalability, reliability, and exceptional performance for educators and learners alike.",
-    href: "https://learnify-lms-eight.vercel.app",
+    href: "https://learnify-lms-ten.vercel.app",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/project-logo2.png",
     logoStyle: {
