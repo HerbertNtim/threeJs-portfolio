@@ -60,7 +60,7 @@ export const navLinks = [
 //   },
 // ];
 
-export const myProjects = [
+export const web_mobile = [
   {
     title: "Eficio - A Project Management System",
     desc: "Eficio is a web-based project management system that allows you to manage projects, tasks, and milestones. It provides a seamless and efficient workflow for your team.",
@@ -268,6 +268,40 @@ export const myProjects = [
   //     },
   //   ],
   // },
+];
+
+export const learning_concepts = [
+  {
+    title: "Redux Playground",
+    desc: "Learning Redux Toolkit with small apps",
+    subdesc: "State management practice",
+    logo: "/assets/redux.png",
+    spotlight: "/assets/redux-bg.jpg",
+    href: "https://redux-play.com",
+    tags: [
+      { name: "Redux", path: "/assets/redux.svg" },
+      { name: "React", path: "/assets/react.svg" },
+    ],
+    texture: "/assets/redux-texture.png",
+    logoStyle: { backgroundColor: "#764abc" }
+  }
+];
+
+export const ai_ml = [
+  {
+    title: "Stock Predictor",
+    desc: "AI model predicting stock prices",
+    subdesc: "LSTM-based prediction",
+    logo: "/assets/python.png",
+    spotlight: "/assets/ai-bg.jpg",
+    href: "https://github.com/herbert/stock-predictor",
+    tags: [
+      { name: "Python", path: "/assets/python.svg" },
+      { name: "TensorFlow", path: "/assets/tensorflow.svg" },
+    ],
+    texture: "/assets/ai-texture.png",
+    logoStyle: { backgroundColor: "#f7931e" }
+  }
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {

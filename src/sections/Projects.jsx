@@ -5,13 +5,14 @@ import { Canvas } from '@react-three/fiber';
 import { Center, OrbitControls } from '@react-three/drei';
 
 import DemoComputer from '../components/DemoComputer.jsx';
-import { myProjects } from '../constant/index.js';
+import { web_mobile } from '../constant/index.js';
 import CanvasLoader from '../components/CanvasLoader.jsx';
 
-const projectCount = myProjects.length;
+const projectCount = web_mobile.length;
 
 const Projects = () => {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
+  const [projectType, setProjectType] = useState("Web/Mobile")
 
   const handleNavigation = (direction) => {
     setSelectedProjectIndex((prevIndex) => {
@@ -27,12 +28,13 @@ const Projects = () => {
     gsap.fromTo(`.animatedText`, { opacity: 0 }, { opacity: 1, duration: 1, stagger: 0.2, ease: 'power2.inOut' });
   }, [selectedProjectIndex]);
 
-  const currentProject = myProjects[selectedProjectIndex];
+  const currentProject = web_mobile[selectedProjectIndex];
 
   return (
     <section className="c-space my-20" id="work">
-      <div>
+      <div className="flex ">
         <p className="head-text">My Selected Work</p>
+        
       </div>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
