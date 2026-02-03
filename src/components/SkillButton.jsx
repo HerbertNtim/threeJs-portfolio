@@ -1,6 +1,6 @@
-const TechButton = ({ name, isBeam = false, containerClass, onClick }) => {
+const SkillButton = ({ name, isBeam = false, onClick }) => {
   return (
-    <button onClick={onClick} className={`t-btn ${containerClass}`}>
+    <button onClick={onClick} className={`s-btn`}>
       {isBeam && (
         <span className="relative flex h-2 w-2">
           <span className="btn-ping"></span>
@@ -12,4 +12,4 @@ const TechButton = ({ name, isBeam = false, containerClass, onClick }) => {
   );
 };
 
-export default TechButton;
+export default SkillButton;

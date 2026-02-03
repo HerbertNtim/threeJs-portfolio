@@ -270,6 +270,56 @@ export const web_mobile = [
   // },
 ];
 
+export const data_science = [
+  {
+    title: "Eficio - A Project Management System",
+    desc: "Eficio is a web-based project management system that allows you to manage projects, tasks, and milestones. It provides a seamless and efficient workflow for your team.",
+    subdesc:
+      "Built as a unique web app with Next.js 15, Tailwind CSS, TypeScript, Node.js, Prisma, PostgreSQL and AWS for deployment, Eficio is designed for optimal performance and scalability.",
+    href: "https://www.youtube.com/watch?v=k0zDHkpDctY",
+    texture: "/textures/project/project1.mp4",
+    logo: "/assets/project-logo1.png",
+    logoStyle: {
+      backgroundColor: "#2A1816",
+      border: "0.2px solid #36201D",
+      boxShadow: "0px 0px 60px 0px #AA3C304D",
+    },
+    spotlight: "/assets/spotlight1.png",
+    tags: [
+      {
+        id: 1,
+        name: "Node.js",
+        path: "/assets/nodejs.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "assets/tailwindcss.png",
+      },
+      {
+        id: 3,
+        name: "TypeScript",
+        path: "/assets/typescript.png",
+      },
+      {
+        id: 4,
+        name: "Next Js",
+        path: "/assets/next.svg",
+      },
+      {
+        id: 5,
+        name: "AWS",
+        path: "/assets/aws.png",
+      },
+      {
+        id: 6,
+        name: "postgreSQL",
+        path: "/assets/postgresql.png",
+      },
+    ],
+  },
+]
+
 export const learning_concepts = [
   {
     title: "Redux Playground",

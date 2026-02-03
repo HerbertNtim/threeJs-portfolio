@@ -60,6 +60,10 @@ body {
   .t-btn {
     @apply flex gap-2 items-center justify-center cursor-pointer p-2 rounded-md bg-black-300 transition-all active:scale-95 text-white text-xs mx-auto;
   }
+  
+  .s-btn {
+    @apply flex gap-2 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300 transition-all active:scale-95 text-white text-lg mx-auto;
+  }
 
   .btn-ping {
     @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75;
