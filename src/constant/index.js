@@ -272,53 +272,53 @@ export const web_mobile = [
 
 export const data_science = [
   {
-    title: "Eficio - A Project Management System",
-    desc: "Eficio is a web-based project management system that allows you to manage projects, tasks, and milestones. It provides a seamless and efficient workflow for your team.",
+    title: "Heart Disease Prediction",
+    desc: "A machine learning project that predicts the likelihood of heart disease using patient medical data. The system analyzes clinical features to assist in early detection and risk assessment, demonstrating how data science can support healthcare decision-making.",
     subdesc:
-      "Built as a unique web app with Next.js 15, Tailwind CSS, TypeScript, Node.js, Prisma, PostgreSQL and AWS for deployment, Eficio is designed for optimal performance and scalability.",
-    href: "https://www.youtube.com/watch?v=k0zDHkpDctY",
-    texture: "/textures/project/project1.mp4",
-    logo: "/assets/project-logo1.png",
+          "Built using Jupyter Notebook with Python, Pandas, NumPy, Scikit-learn, and Matplotlib, the project includes data preprocessing, exploratory data analysis, feature engineering, and model training with multiple classification algorithms for accurate predictions.",
+    href: "https://github.com/HerbertNtim/heart-disease_project",
+    texture: "/textures/project/heart_disease.mp4",
+    logo: "https://cdn-icons-png.flaticon.com/512/833/833472.png",
     logoStyle: {
-      backgroundColor: "#2A1816",
-      border: "0.2px solid #36201D",
-      boxShadow: "0px 0px 60px 0px #AA3C304D",
+      backgroundColor: "#1F2933",
+      border: "0.2px solid #2D3748",
+      boxShadow: "0px 0px 60px 0px #EF44444D",
     },
-    spotlight: "/assets/spotlight1.png",
+    spotlight: "/assets/spotlight2.png",
     tags: [
       {
         id: 1,
-        name: "Node.js",
-        path: "/assets/nodejs.svg",
+        name: "Python",
+        path: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
       },
       {
         id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
+        name: "Pandas",
+        path: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
       },
       {
         id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
+        name: "Scikit-learn",
+        path: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg",
       },
       {
         id: 4,
-        name: "Next Js",
-        path: "/assets/next.svg",
+        name: "NumPy",
+        path: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
       },
       {
         id: 5,
-        name: "AWS",
-        path: "/assets/aws.png",
+        name: "Matplotlib",
+        path: "https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg",
       },
       {
-        id: 6,
-        name: "postgreSQL",
-        path: "/assets/postgresql.png",
-      },
+      id: 6,
+      name: "Jupyter",
+      path: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
+    },
     ],
   },
-]
+];
 
 export const learning_concepts = [
   {
@@ -333,26 +333,10 @@ export const learning_concepts = [
       { name: "React", path: "/assets/react.svg" },
     ],
     texture: "/assets/redux-texture.png",
-    logoStyle: { backgroundColor: "#764abc" }
-  }
+    logoStyle: { backgroundColor: "#764abc" },
+  },
 ];
 
-export const ai_ml = [
-  {
-    title: "Stock Predictor",
-    desc: "AI model predicting stock prices",
-    subdesc: "LSTM-based prediction",
-    logo: "/assets/python.png",
-    spotlight: "/assets/ai-bg.jpg",
-    href: "https://github.com/herbert/stock-predictor",
-    tags: [
-      { name: "Python", path: "/assets/python.svg" },
-      { name: "TensorFlow", path: "/assets/tensorflow.svg" },
-    ],
-    texture: "/assets/ai-texture.png",
-    logoStyle: { backgroundColor: "#f7931e" }
-  }
-];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
   return {
@@ -361,31 +345,31 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
     cubePosition: isSmall
       ? [4, -5, 0]
       : isMobile
-      ? [5, -5, 0]
-      : isTablet
-      ? [5, -5, 0]
-      : [9, -5.5, 0],
+        ? [5, -5, 0]
+        : isTablet
+          ? [5, -5, 0]
+          : [9, -5.5, 0],
     reactLogoPosition: isSmall
       ? [3, 4, 0]
       : isMobile
-      ? [5, 4, 0]
-      : isTablet
-      ? [5, 4, 0]
-      : [12, 3, 0],
+        ? [5, 4, 0]
+        : isTablet
+          ? [5, 4, 0]
+          : [12, 3, 0],
     ringPosition: isSmall
       ? [-5, 7, 0]
       : isMobile
-      ? [-10, 10, 0]
-      : isTablet
-      ? [-12, 10, 0]
-      : [-24, 10, 0],
+        ? [-10, 10, 0]
+        : isTablet
+          ? [-12, 10, 0]
+          : [-24, 10, 0],
     targetPosition: isSmall
       ? [-5, -10, -10]
       : isMobile
-      ? [-9, -10, -10]
-      : isTablet
-      ? [-11, -7, -10]
-      : [-13, -13, -10],
+        ? [-9, -10, -10]
+        : isTablet
+          ? [-11, -7, -10]
+          : [-13, -13, -10],
   };
 };
 
